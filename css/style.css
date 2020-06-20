@@ -1,0 +1,212 @@
+/* navbar active */
+.actived{
+  color:#3af49d;
+}
+/* footer */
+footer{
+    background-color: rgb(75, 182, 150);
+    color:#fff;
+    padding-top:2rem;
+  }
+  .faSocial a{
+    font-size: 35px;
+  }
+  
+  .fa-facebook{
+    color: rgba(59,89,152);
+    border-radius: 40px;
+  }
+
+  .fa-instagram{
+    color:#e4405f
+  }
+
+  
+  .fa-facebook:hover,
+  .fa-instagram:hover{
+    color:#3af49d;
+  }
+  .contactFa{
+    font-size:30px;
+    padding-right:5px;
+  }
+/* Text-Titlu */
+.move{
+position: relative;
+  animation-name: mymove;
+  animation-duration: 1.5s;
+  transition: all ease-in-out 1s;
+}
+.rmove{
+  position: relative;
+    animation-name: myrmove;
+    animation-duration: 1.5s;
+    transition: all ease-in-out 1s;
+  }
+
+@keyframes mymove {
+  from {bottom: -200px;}
+  to {bottom: 0;}
+}
+@keyframes myrmove{
+  from {top: -200px;}
+  to {top: 0;}
+}
+@media (max-width: 992px){
+  @keyframes mymove {
+    from {bottom: -50px;}
+    to {bottom: 0;}
+  }
+  @keyframes myrmove{
+    from {top: -50px;}
+    to {top: 0;}
+  }
+}
+/* Cateva Efecte */
+.fade-in {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in-form{
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.appear,.fade-in-form.appear {
+  opacity: 1;
+}
+.from-left {
+  
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-left {
+  transition: opacity 500ms ease-in, -webkit-transform 700ms ease-in;
+  transition: opacity 500ms ease-in, transform 700ms ease-in;
+  transition: opacity 500ms ease-in, transform 700ms ease-in,
+    -webkit-transform 700ms ease-in;
+    transition-timing-function: ease-in-out;
+  opacity: 0;
+}
+
+.from-left.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-down {
+  
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+}
+
+.from-down {
+  transition: opacity 500ms ease-in-out, -webkit-transform 700ms ease-in-out;
+  transition: opacity 500ms ease-in-out, transform 700ms ease-in-out;
+  transition: opacity 500ms ease-in-out, transform 700ms ease-in-out,
+    -webkit-transform 700ms ease-in-out;
+  transition-timing-function: cubic-bezier(0.37, 1.52, 0.61, -0.36);
+  opacity: 0;
+}
+@media (max-width: 992px){
+  .from-down {
+  
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%);
+  }
+  .from-down {
+    transition: opacity 500ms ease-in-out, -webkit-transform 700ms ease-in-out;
+    transition: opacity 500ms ease-in-out, transform 700ms ease-in-out;
+    transition: opacity 500ms ease-in-out, transform 700ms ease-in-out,
+      -webkit-transform 700ms ease-in-out;
+    transition-timing-function: cubic-bezier(0.37, 1.52, 0.61, -0.36);
+    opacity: 0;
+  }
+  .from-down.appear {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.from-down.appear {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+/* Preturi */
+section.pricing {
+  background: #3CB371;
+
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+
+  .pricing .card:hover {
+    margin-top: -.35rem;
+    margin-bottom: .35rem;
+    background: rgb(34, 143, 108);
+
+    color:#fff;
+  }
+  
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+/* Design Formular */
+label{
+  color:white;
+}
+.formContact{
+  border: 1px solid #fff;
+  padding:20px;
+}
